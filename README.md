@@ -3,6 +3,8 @@
 ## Description
 This simple project was created by myself to enrich my portfolio and simply for fun! You can randomly draw a sentence from API unil you get bored. It comes from Frontend Mentor site and it's my first project from there. I'm going to get some more advanced challenges to proudly add to my portfolio while looking for a job.
 
+![example](https://github.com/mikolajgraczyk/advice-generator-app/blob/main/public/demo.gif?raw=true)
+
 ## Technologies used in project
 - html
 - css
