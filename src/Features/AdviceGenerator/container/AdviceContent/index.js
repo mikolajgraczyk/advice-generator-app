@@ -1,10 +1,13 @@
 import { StyledAdviceContent } from "./styled";
+import { useSelector } from "react-redux";
+import { selectAdviceContent } from "../../adviceSlice";
 
 const AdviceContent = () => {
+  const advice = useSelector(selectAdviceContent);
+
   return (
     <StyledAdviceContent>
-      “It is easy to sit up and take notice, what's difficult is getting up and
-      taking action.”
+      {advice}
     </StyledAdviceContent>
   );
 };

@@ -16,6 +16,7 @@ export const GlobalStyle = createGlobalStyle`
        justify-content: center;
        align-items: center;
        padding: 16px;
+       margin: 0;
        font-family: Manrope;
     }
 `;
