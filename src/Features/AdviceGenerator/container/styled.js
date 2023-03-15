@@ -7,11 +7,14 @@ const bpMobile = ({ theme }) => theme.breakpoint.mobile;
 export const StyledContainer = styled.main`
   background: ${({ theme }) => theme.color.darkGrayishBlue};
   max-width: 540px;
-  padding: 48px;
-  padding-bottom: 72px;
+  padding: 48px 48px 72px 48px;
   box-shadow: 30px 50px 80px rgba(0, 0, 0, 0.100202);
   border-radius: 15px;
   position: relative;
+
+  @media (max-width: ${bpMobile}px) {
+    padding: 40px 24px 64px 24px;
+  }
 `;
 
 export const StyledDividerDesktop = styled(DividerDesktop)`
