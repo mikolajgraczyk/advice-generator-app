@@ -4,8 +4,8 @@ const adviceSlice = createSlice({
   name: "advice",
   initialState: {
     advice: {
-      content: "waiting for advice",
-      id: "21",
+      content: "",
+      id: "",
     },
   },
   reducers: {
