@@ -6,5 +6,7 @@ export const theme = {
     lightCyan: "#CEE3E9",
     neonGreen: "#53FFAA",
   },
-  breakpoint: {},
+  breakpoint: {
+    mobile: 600,
+  },
 };
