@@ -13,8 +13,7 @@ https://mikolajgraczyk.github.io/advice-generator-app/
 - css
 - JSX
 - React
-- Redux(toolkit)
-- Redux Saga
+- React Query (TanStack)
 - SVG images
 - fetch
 - async/await
