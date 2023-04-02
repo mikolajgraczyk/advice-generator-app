@@ -4,22 +4,20 @@ import {
   StyledDividerMobile,
   Button,
 } from "./styled";
-import { fetchAdvice } from "../adviceSlice";
-import { useDispatch } from "react-redux";
 import { ReactComponent as DiceIcon } from "./images/DiceIcon.svg";
-import AdviceNumber from "./AdviceNumber";
-import AdviceContent from "./AdviceContent";
+import ContainerContent from "./ContainerContent";
+import { useQuery } from "@tanstack/react-query";
+import { getAdvice } from "./getAdvice";
 
 const Container = () => {
-  const dispatch = useDispatch();
+  const { isLoading, error, data, refetch } = useQuery(["advice"], getAdvice);
 
   return (
     <StyledContainer>
-      <AdviceNumber />
-      <AdviceContent />
+      <ContainerContent data={data} error={error} isLoading={isLoading} />
       <StyledDividerDesktop />
       <StyledDividerMobile />
-      <Button onClick={() => dispatch(fetchAdvice())}>
+      <Button onClick={() => refetch()}>
         <DiceIcon />
       </Button>
     </StyledContainer>
