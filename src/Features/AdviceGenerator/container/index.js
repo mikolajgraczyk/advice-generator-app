@@ -11,7 +11,7 @@ const Container = () => {
   const { isLoading, error, data, refetch } = useQuery(["advice"], getAdvice);
 
   return (
-    <main className="bg-darkGrayishBlue max-w-[540px] px-[48px] pt-[48px] pb-[72px] relative rounded-[15px] shadow-[30px_50px_80px_rgba(0,0,0,0.100202)] max-mobile:py-[24px] max-mobile:pt-[40px] max-mobile:pb-[64px]">
+    <main className="bg-darkGrayishBlue max-w-[540px] px-[48px] pt-[48px] pb-[72px] relative rounded-[15px] shadow-[30px_50px_80px_rgba(0,0,0,0.100202)] max-mobile:px-[10px] max-mobile:pt-[40px] max-mobile:pb-[64px]">
       <ContainerContent data={data} error={error} isLoading={isLoading} />
       <DividerDesktop className="mt-[40px] max-mobile:hidden" />
       <DividerMobile className="hidden max-mobile:block my-[24px] mx-auto"/>
