@@ -17,7 +17,7 @@ https://mikolajgraczyk.github.io/advice-generator-app/
 - SVG images
 - fetch
 - async/await
-- styledComponents
+- tailwind css
 
 In the project directory, you can run:
 
